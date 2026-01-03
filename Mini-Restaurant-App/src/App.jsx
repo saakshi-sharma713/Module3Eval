@@ -7,7 +7,7 @@ import { Route, Routes } from 'react-router-dom'
 import Admin from './Pages/Admin'
 import Customer from './Pages/Customer'
 import ProtectedRoute from './Pages/ProtectedRoute'
-import CustomerProtectedRoute from './Pages/CustomerProtectedRoute'
+
 
 function App() {
   const [count, setCount] = useState(0)

@@ -3,11 +3,15 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import {BrowserRouter} from 'react-router-dom'
+import Restraurant from './Context/Restraurant.jsx'
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <BrowserRouter>
+  
+    <Restraurant>
+<BrowserRouter>
      <App />
     </BrowserRouter>
+    </Restraurant>
+    
    
-  </StrictMode>,
+
 )

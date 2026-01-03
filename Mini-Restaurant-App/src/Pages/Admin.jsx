@@ -1,9 +1,12 @@
 import React from 'react'
+import Sidebar from '../Components/Sidebar'
+import MainContentArea from '../Components/MainContentArea'
 
 const Admin = () => {
   return (
     <div>
-      <h1>Admin</h1>
+    <Sidebar/>
+    <MainContentArea/>
     </div>
   )
 }

@@ -11,7 +11,7 @@ const ProtectedRoute = ({children}) => {
   return (
     <div>
     {
-        status == "admin" ? <Admin/> : <Customer/>
+        status == "Admin" ? <Admin/> : <Customer/>
     }
     </div>
   )
