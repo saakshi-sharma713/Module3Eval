@@ -30,7 +30,7 @@ const Login = () => {
     }
   return (
     <div>
-        <form onSubmit={(e)=>{handleSubmit(e)}}>
+        <form onSubmit={(e)=>{handleSubmit(e)}} style={{display:"flex",justifyContent:"center"}}>
 <input type="email" value={formData.email} name="email" onChange={(e)=>{handleChnage(e)}}/>
       <input type="password" name="password" value={formData.password} onChange={(e)=>{handleChnage(e)}}/>
       <button>Login</button>

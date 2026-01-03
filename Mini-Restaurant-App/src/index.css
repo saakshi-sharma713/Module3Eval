@@ -1,12 +1,19 @@
 .Side-Form{
   display:flex;
-  width:20%;
+  width:300px;
   gap:16px;
   flex-direction: column;
+
 }
 .Side-Form input,button{
   width:100%;
   height:30px;
   border:1px solid black;
   border-radius:8px;
+}
+.card-container{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: auto;
+  gap:15px;
 }

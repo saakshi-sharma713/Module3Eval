@@ -1,6 +1,17 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import { Navigate } from 'react-router-dom'
+import { RestaurantContext } from '../Context/Restraurant'
 
 const UpdatePage = () => {
+    const {restaurants} = useContext(RestaurantContext);
+    const[formData,setData] = useState({ 
+            email:"", 
+            password:""
+        })
+
+    useEffect(()=>{
+        
+    })
   return (
     <div>
       <form onSubmit={(e)=>{handleSubmit(e)}}  className='Side-Form'>
@@ -24,6 +35,7 @@ const UpdatePage = () => {
         <option value="No"> Parking No</option>
       </select>
 </form>
+<button onClick={()=> <Navigate to="/admin.dashboard"/>}>Save</button>
     </div>
   )
 }

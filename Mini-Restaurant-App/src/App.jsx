@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom'
 import Admin from './Pages/Admin'
 import Customer from './Pages/Customer'
 import ProtectedRoute from './Pages/ProtectedRoute'
+import UpdatePage from './Pages/UpdatePage'
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/customer/dashboard" element={<ProtectedRoute>
           <Customer/>
         </ProtectedRoute>}/> 
+        <Route path="/admin/restaurant/update" element={<UpdatePage/>}/>
        </Routes>
     </>
   )
