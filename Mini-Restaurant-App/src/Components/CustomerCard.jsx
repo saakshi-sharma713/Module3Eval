@@ -3,7 +3,7 @@ import UpdatePage from '../Pages/UpdatePage'
 import { Navigate, useNavigate } from 'react-router-dom'
 import { RestaurantContext } from '../Context/Restraurant'
 
-const Card = ({data,index}) => {
+const CustomerCard = ({data,index}) => {
 const {deleteData} = useContext(RestaurantContext);
 const navigate = useNavigate();
 const handleUpdate=()=>{
@@ -23,4 +23,4 @@ const handleDelete =(id,index)=>{
       </div>
       )
     }
-      export default CustomerCard
+      export default CustomerCard;
