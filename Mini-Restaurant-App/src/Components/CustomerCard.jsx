@@ -4,6 +4,7 @@ import { Navigate, useNavigate } from 'react-router-dom'
 import { RestaurantContext } from '../Context/Restraurant'
 
 const CustomerCard = ({data,index}) => {
+   const {restaurants} = useContext(RestaurantContext); 
 const {deleteData} = useContext(RestaurantContext);
 const navigate = useNavigate();
 const handleUpdate=()=>{
@@ -14,6 +15,7 @@ const handleDelete =(id,index)=>{
      deleteData(id);
 }
   return (
+    restaurants.map((data,idx)=>(
     <div style={{width:"60%"}}>
       <img src={data.image} width="300"/>
       <h3>{data.restaurantName}</h3>
@@ -21,6 +23,6 @@ const handleDelete =(id,index)=>{
       <h3>{data.type}</h3>
       <h3>Parking : {data.parkingLot}</h3>
       </div>
-      )
+      )))
     }
       export default CustomerCard;
